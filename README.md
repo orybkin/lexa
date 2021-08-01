@@ -11,7 +11,7 @@
 
 <a href="https://orybkin.github.io/lexa/">
 <p align="center">
-<img src="https://github.com/orybkin/lexa/blob/main/resources/cartoon.gif" width="800">
+<img src="https://orybkin.github.io/lexa/resources/frontier.gif" width="800">
 </p>
 </img></a>
 
