@@ -1,6 +1,6 @@
 ## Discovering and Achieving Goals via World Models
 
-####  [[Project Website]](https://orybkin.github.io/lexa/) [[Benchmark Code]](https://www.youtube.com/watch?v=LnZj2lZYD3k) [[Video (2min)]](https://www.youtube.com/watch?v=LnZj2lZYD3k) [[Oral Talk (13min)]](https://www.youtube.com/watch?v=4FcbqixiFXw) [[Paper]](https://orybkin.github.io/lexa/resources/paper.pdf)
+####  [[Project Website]](https://orybkin.github.io/lexa/) [[Benchmark Code]](https://github.com/orybkin/lexa-benchmark) [[Video (2min)]](https://www.youtube.com/watch?v=LnZj2lZYD3k) [[Oral Talk (13min)]](https://www.youtube.com/watch?v=4FcbqixiFXw) [[Paper]](https://orybkin.github.io/lexa/resources/paper.pdf)
 [Russell Mendonca*<sup>1</sup>](https://www.youtube.com/watch?v=4FcbqixiFXw&feature=emb_logo), [Oleh Rybkin*<sup>2</sup>](https://www.seas.upenn.edu/~oleh/), [Kostas Daniilidis<sup>2</sup>](http://www.cis.upenn.edu/~kostas/), [Danijar Hafner<sup>3,4</sup>](https://danijar.com/), [Deepak Pathak<sup>1</sup>](https://www.cs.cmu.edu/~dpathak/)<br/>
 (&#42; equal contribution, random order)
 
@@ -21,13 +21,11 @@ Create the conda environment by running :
 conda env create -f environment.yml
 ```
 
-Clone the [lexa-benchmark][lexa-bench-repo] repo, and modify the python path   
+Clone the [lexa-benchmark](https://github.com/orybkin/lexa-benchmark) repo, and modify the python path   
 `export PYTHONPATH=<path to lexa-training>/lexa:<path to lexa-benchmark>`  
 
 Export the following variables for rendering  
 `export MUJOCO_RENDERER=egl; export MUJOCO_GL=egl`
-
-[lexa-bench-repo]: https://github.com/lexa-agent/lexa-benchmark
 
 ## Training
 
