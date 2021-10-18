@@ -1,7 +1,7 @@
 ## Discovering and Achieving Goals via World Models
 
 ####  [[Project Website]](https://orybkin.github.io/lexa/) [[Benchmark Code]](https://github.com/orybkin/lexa-benchmark) [[Video (2min)]](https://www.youtube.com/watch?v=LnZj2lZYD3k) [[Oral Talk (13min)]](https://www.youtube.com/watch?v=4FcbqixiFXw) [[Paper]](https://orybkin.github.io/lexa/resources/paper.pdf)
-[Russell Mendonca*<sup>1</sup>](https://www.youtube.com/watch?v=4FcbqixiFXw&feature=emb_logo), [Oleh Rybkin*<sup>2</sup>](https://www.seas.upenn.edu/~oleh/), [Kostas Daniilidis<sup>2</sup>](http://www.cis.upenn.edu/~kostas/), [Danijar Hafner<sup>3,4</sup>](https://danijar.com/), [Deepak Pathak<sup>1</sup>](https://www.cs.cmu.edu/~dpathak/)<br/>
+[Russell Mendonca](https://russellmendonca.github.io/)\*<sup>1</sup>, [Oleh Rybkin](https://www.seas.upenn.edu/~oleh/)\*<sup>2</sup>, [Kostas Daniilidis](http://www.cis.upenn.edu/~kostas/)<sup>2</sup>, [Danijar Hafner](https://danijar.com/)<sup>3,4</sup>, [Deepak Pathak](https://www.cs.cmu.edu/~dpathak/)<sup>1</sup><br/>
 (&#42; equal contribution, random order)
 
 <sup>1</sup>Carnegie Mellon University </br> 
