@@ -176,7 +176,7 @@
   <meta property="og:description" content="Mendonca, Rybkin, Daniilidis, Hafner, Pathak. Discovering and Achieving Goals via World Models. 2020." />
   <meta property="og:url" content="https://orybkin.github.io/" />
   <meta property="og:image" content="https://orybkin.github.io/lexa/resources/teaser.jpg" />
-  <meta property="og:video" content="https://www.youtube.com/v/4FcbqixiFXw" />
+  <meta property="og:video" content="https://www.youtube.com/v/LnZj2lZYD3k" />
 
   <meta property="article:publisher" content="https://orybkin.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -190,7 +190,7 @@
   <script src="https://www.youtube.com/iframe_api"></script>
   <meta name="twitter:card" content="player" />
   <meta name="twitter:image" content="https://orybkin.github.io/lexa/resources/teaser.jpg" />
-  <meta name="twitter:player" content="https://www.youtube.com/embed/4FcbqixiFXw?rel=0&showinfo=0" />
+  <meta name="twitter:player" content="https://www.youtube.com/embed/LnZj2lZYD3k?rel=0&showinfo=0" />
   <meta name="twitter:player:width" content="640" />
   <meta name="twitter:player:height" content="360" />
 </head>
@@ -219,25 +219,27 @@
          <center><span >CMU</span></center>
          </div>
       </div>
-      <table align=center width=30% style="padding-top:0px;padding-bottom:0px">
+      <table align=center width=50% style="padding-top:0px;padding-bottom:0px">
           <tr>
-            <td align=center><center><span style="font-size:15px">* equal contribution</span></center></td>
+            <td align=center><center><span style="font-size:15px">* equal contribution, random order</span></center></td>
           <tr/>
       </table>
-      <center><span style="font-size:20px;"><a href='https://urlworkshop.github.io/'>Unsupervised RL workshop at ICML, 2021 (Oral Talk)</a></span></center>
+      <center><span style="font-size:22px;"><a href='https://neurips.cc/'>Neural Information Processing Systems (NeurIPS), 2021</a></span></center>
+      <center><span style="font-size:18px;"><a href='https://urlworkshop.github.io/'>Unsupervised RL workshop at ICML, 2021. Oral Talk</a></span></center>
+      <center><span style="font-size:18px;"><a href='https://sslrlworkshop.github.io/'>Self-Supervised Learning workshop at ICML, 2021. Oral Talk</a></span></center>
       <!-- <center><span style="font-size:20px;"><a href='https://icml.cc/Conferences/2021'>International Conference on Machine Learning (ICML), 2021</a></span></center> -->
 
-      <div class="table-like" style="justify-content:space-evenly;max-width:600px;margin:auto;padding:5px">
+      <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;padding:5px">
         <div><center><span style="font-size:28px"><a href="resources/paper.pdf">[Paper]</a></span></center></div>
         <div><center><span style="font-size:28px"><a href='resources/poster.pdf'>[Poster]</a></span></center> </div>
-        <div><center><span style="font-size:28px"><a href='https://github.com/orybkin/lexa'>[Code]</a></span></center> </div>
-        <!-- <div><center><span style="font-size:28px"><a href='https://github.com/zchuning/metaworld'>[Env Code]</a></span></center> </div> -->
+        <div><center><span style="font-size:28px"><a href='https://github.com/orybkin/lexa'>[LEXA Code]</a></span></center> </div>
+        <div><center><span style="font-size:28px"><a href='https://github.com/orybkin/lexa-benchmark'>[Env Code]</a></span></center> </div>
+        <div><center><span style="font-size:28px"><a href='https://www.youtube.com/embed/4FcbqixiFXw?autoplay=0&loop=1'>[Talk]</a></span></center> </div>
       </div>
 
       <center>
-      <iframe width="768" height="432" max-width="100%" src="https://www.youtube.com/embed/4FcbqixiFXw?autoplay=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+      <iframe width="768" height="432" max-width="100%" src="https://www.youtube.com/embed/LnZj2lZYD3k?autoplay=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
       <br>
-
       <div style="width:800px; margin:0 auto; text-align=right;">
           How can artificial agents learn to solve wide ranges of tasks in complex visual environments in the absence of external supervision? We decompose this question into two problems, global exploration of the environment and learning to reliably reach situations found during exploration. We introduce the Latent Explorer Achiever (LEXA), a unified solution to these by learning a world model from the high-dimensional image inputs and using it to train an explorer and an achiever policy from imagined trajectories. Unlike prior methods that explore by reaching previously visited states, the explorer plans to discover unseen surprising states through foresight, which are then used as diverse targets for the achiever. After the unsupervised phase, LEXA solves tasks specified as goal images zero-shot without any additional learning. We introduce a challenging benchmark spanning across four standard robotic manipulation and locomotion domains with a total of over 40 test tasks. LEXA substantially outperforms previous approaches to unsupervised goal reaching, achieving goals that require interacting with multiple objects in sequence. Finally, to demonstrate the scalability and generality of LEXA, we train a single general agent across four distinct environments.
       </div>
@@ -395,12 +397,29 @@
       <!-- Code -->
       <center id="sourceCode"><h1>Source Code</h1></center>
       <div style="width:800px; margin:0 auto; text-align=right">
-      Coming soon!
+      Try our code for LEXA in TensorFlow V2 as well as our new new goal-conditioned RL benchmark!
       </div>
-      <!-- <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;padding:5px">
-        <div><center><span style="font-size:28px"><a href='https://github.com/zchuning/latco'>[Method Code]</a></span></center> </div>
-        <div><center><span style="font-size:28px"><a href='https://github.com/zchuning/metaworld'>[Env Code]</a></span></center> </div>
-      </div> -->
+      <div class="table-like" style="justify-content:space-evenly;max-width:500px;margin:auto;padding:5px">
+        <div><center><span style="font-size:28px"><a href='https://github.com/orybkin/lexa'>[Agent Code]</a></span></center> </div>
+        <div><center><span style="font-size:28px"><a href='https://github.com/orybkin/lexa-benchmark'>[Benchmark Code]</a></span></center> </div>
+      </div>
+      <br><hr>
+
+      <!-- Code -->
+      <center id="sourceCode"><h1>Previous Works</h1></center>
+      <div style="width:800px; margin:0 auto; text-align=right; font-size:20px">
+      <p>
+      Sekar*, Rybkin*, Daniilidis, Abbeel, Hafner, Pathak. Planning to Explore via Self-Supervised World Models. </br> In ICML 2020. <a href="https://ramanans1.github.io/plan2explore/">[website]</a>
+      </p>
+
+      <p>
+      Hafner, Lillicrap, Ba, Norouzi. Dream to Control: Learning Behaviors by Latent Imagination. </br> In ICLR 2020. <a href="https://danijar.com/project/dreamer/">[website]</a>
+      </p>
+
+      <p>
+      Pathak, Agrawal, Efros, Darrell. Curiosity-driven Exploration by Self-supervised Prediction. </br> In ICML 2017. <a href="https://pathak22.github.io/noreward-rl/">[website]</a>
+      </p>
+      </div>
       <br><hr>
 
       <table align=center width=850px>
@@ -412,15 +431,15 @@
         <center>
         <!-- <span style="font-size:20pt"><a href="https://arxiv.org/pdf/2106.13229.pdf">[Paper]</a> -->
         <!-- <span style="font-size:20pt"><a href="https://arxiv.org/abs/2106.13229">[ArXiv]</a> -->
-        <!-- <span style="font-size:20pt"><a href="resources/slides.pdf">[Slides]</a></span>
-        <span style="font-size:20pt"><a href="resources/poster.pdf">[Poster]</a></span> -->
+        <!-- <span style="font-size:20pt"><a href="resources/slides.pdf">[Slides]</a></span> -->
+        <span style="font-size:20pt"><a href="https://www.seas.upenn.edu/~oleh/images/lexa_poster.pdf">[Poster]</a></span>
         </center>
         </td>
         <td width=50px align=center>
         </td>
         <td width=550px align=left>
         <!-- <p style="margin-top:4px;"></p> -->
-        <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Russell Mendonca, Oleh Rybkin, Kostas Daniilidis, Danijar Hafner, Deepak Pathak. <b>Discovering and Achieving Goals via World Models. </b> 2021. <br/> </span></p>
+        <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Russell Mendonca, Oleh Rybkin, Kostas Daniilidis, Danijar Hafner, Deepak Pathak. <b>Discovering and Achieving Goals via World Models. </b> NeurIPS, 2021. <br/> </span></p>
         <!-- <p style="margin-top:20px;"></p> -->
         <span style="font-size:20pt"><a shape="rect" href="javascript:togglebib('gcp2020_bib')" class="togglebib">[Bibtex]</a></span>
         </td>
@@ -437,7 +456,8 @@
     title={Discovering and Achieving Goals via World Models},
     author={Mendonca, Russell and Rybkin, Oleh and
     Daniilidis, Kostas and Hafner, Danijar and Pathak, Deepak},
-    year={2021}
+    year={2021},
+    Booktitle={NeurIPS}
 }</pre>
           </div>
           </td>
