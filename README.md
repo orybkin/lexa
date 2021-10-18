@@ -59,4 +59,4 @@ If you find this code useful, please cite:
 ```
 
 ## Acknowledgements
-This code was developed using [Dreamer V2](https://github.com/danijar/dreamerv2) and Plan2Explore[https://github.com/ramanans1/plan2explore].
+This code was developed using [Dreamer V2](https://github.com/danijar/dreamerv2) and [Plan2Explore](https://github.com/ramanans1/plan2explore).
