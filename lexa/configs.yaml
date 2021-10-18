@@ -1,0 +1,199 @@
+defaults:
+
+  traindir: null
+  evaldir: null
+  offline_traindir: ''
+  offline_evaldir: ''
+  seed: 0
+  steps: 1e8
+  eval_every: 5e4
+  log_every: 1e4
+  reset_every: 0
+  gpu_growth: True
+  precision: 16
+  debug: False
+  expl_gifs: False
+
+  # Environment
+  task: 'dmc_walker_walk'
+  size: [64, 64]
+  envs: 1
+  action_repeat: 2
+  time_limit: 150
+  prefill: 2500
+  eval_noise: 0.0
+  clip_rewards: 'identity'
+  atari_grayscale: False
+  ee_control_mode: 'end_effector'
+  reset_env: True
+
+  # Model
+  dyn_cell: 'gru_layer_norm'
+  dyn_hidden: 200
+  dyn_deter: 200
+  dyn_stoch: 50
+  dyn_discrete: 0
+  dyn_input_layers: 1
+  dyn_output_layers: 1
+  dyn_shared: False
+  dyn_mean_act: 'none'
+  dyn_std_act: 'sigmoid2'
+  dyn_min_std: 0.1
+  grad_heads: ['image', 'reward']
+  units: 400
+  reward_layers: 2
+  discount_layers: 3
+  value_layers: 3
+  actor_layers: 4
+  act: 'elu'
+  cnn_depth: 32
+  encoder_kernels: [4, 4, 4, 4]
+  decoder_kernels: [5, 5, 6, 6]
+  decoder_thin: True
+  value_head: 'normal'
+  kl_scale: '1.0'
+  kl_balance: '0.8'
+  kl_free: '1.0'
+  pred_discount: False
+  discount_scale: 1.0
+  reward_scale: 2.0
+  weight_decay: 0.0
+  pred_embed: False
+  pred_reward: False
+  sync_s3 : False
+
+  # Training
+  training: True
+  batch_size: 45
+  batch_length: 50
+  train_every: 5
+  train_steps: 1
+  pretrain: 100
+  model_lr: 3e-4
+  value_lr: 8e-5
+  actor_lr: 8e-5
+  opt_eps: 1e-5
+  grad_clip: 100
+  value_grad_clip: 100
+  actor_grad_clip: 100
+  dataset_size: 1e6
+  oversample_ends: False
+  slow_value_target: True
+  slow_actor_target: True
+  slow_target_update: 100
+  slow_target_fraction: 1
+  opt: 'adam'
+
+  rp_lr: 8e-5
+  rp_grad_clip: 100
+
+  # Behavior.
+  task_behavior: 'gcdreamer'
+  discount: 0.99
+  discount_lambda: 0.95
+  imag_horizon: 15
+  imag_gradient: 'dynamics'
+  imag_gradient_mix: 1.0
+  imag_sample: True
+  actor_dist: 'trunc_normal'
+  actor_entropy: '1e-4'
+  actor_state_entropy: 0.0
+  actor_init_std: 1.0
+  actor_min_std: 0.1
+  actor_disc: 5
+  actor_temp: 0.1
+  actor_outscale: 0.0
+  expl_amount: 0.0
+  eval_state_mean: False
+  collect_dyn_sample: True
+  behavior_stop_grad: True
+  value_decay: 0.0
+  future_entropy: False
+
+  # Exploration
+  expl_behavior: 'plan2explore'
+  expl_every_ep: 2
+  expl_until: -100
+  expl_extr_scale: 0.0
+  expl_intr_scale: 1.0
+  disag_target: 'stoch'
+  disag_log: True
+  disag_models: 10
+  disag_offset: 1
+  disag_layers: 4
+  disag_units: 400
+
+  # Goal-conditioned Dreamer
+  gc_input: 'embed'
+  gc_reward: 'feat'
+  training_goals: 'batch'
+  pred_stoch_state: False
+  skill_dim: 16
+  skill_pred_noise: 0
+  skill_pred_input: 'feat'
+  state_rep_for_policy: 'feat'
+  imag_on_policy : True
+  test_log_per_goal: False
+  labelled_env_multiplexing: False
+  latent_constraint : ''
+  encoder_cls: vanilla
+
+  #off-policy training, gcbc
+  offpolicy_opt : False
+  offpolicy_use_embed : False
+  train_off_policy_every: 5 
+  relabel_mode : 'geometric'
+  relabel_fraction : 0.5
+  gcbc : False
+  gcbc_distance_weighting : False
+
+  ##dynamical_distance params
+  dd_inp : 'embed'
+  dd_num_positives : 256
+  dd_neg_sampling_factor : 0
+  dd_norm_inp : False
+  dd_norm_reg_label : True
+  dd_train_imag : True
+  dd_train_off_policy : False
+  dd_distance : 'steps_to_go' 
+  dd_loss : 'regression'
+  dd_prob_balance: 1.0
+
+lexa_temporal:
+  gc_reward: 'dynamical_distance'
+  pred_embed: True
+  
+lexa_cosine:
+  gc_reward: 'cosine'
+
+ddl:
+  expl_behavior: 'greedy'
+  expl_every_ep: 0
+  expl_until: 0
+  gc_reward: 'dynamical_distance'
+  pred_embed: True
+  dd_train_imag: False
+  dd_train_off_policy: True 
+  
+diayn:
+  gc_input: 'skills'
+  skill_dim: 16
+  double_rev_pred: False
+  pred_embed: True
+  skill_pred_input: embed
+
+gcsl : 
+  imag_on_policy: False
+  gcbc : True 
+  offpolicy_opt : True
+  relabelling : 'uniform'
+
+v2:
+  dyn_hidden: 600
+  dyn_deter: 600
+  cnn_depth: 48
+  reward_layers: 4
+  weight_decay: 1e-6
+  imag_gradient: 'both'
+
+

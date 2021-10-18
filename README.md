@@ -1,18 +1,42 @@
-## Discovering and Achieving Goals with World Models
+# Discovering and Achieving Goals via World Models
 
-####  [[Project Website]](https://orybkin.github.io/lexa/) [[Oral Talk (13min)]](https://www.youtube.com/watch?v=4FcbqixiFXw) [[Paper]](https://orybkin.github.io/lexa/resources/paper.pdf)
-[Russell Mendonca*<sup>1</sup>](https://www.youtube.com/watch?v=4FcbqixiFXw&feature=emb_logo), [Oleh Rybkin*<sup>2</sup>](https://www.seas.upenn.edu/~oleh/), [Kostas Daniilidis<sup>2</sup>](http://www.cis.upenn.edu/~kostas/), [Danijar Hafner<sup>3,4</sup>](https://danijar.com/), [Deepak Pathak<sup>1</sup>](https://www.cs.cmu.edu/~dpathak/)<br/>
-(&#42; equal contribution)
+Official implementation of the [Lexa][website] agent from the paper Discovering and Achieving Goals via World Models.
 
-<sup>1</sup>Carnegie Mellon University </br> 
-<sup>2</sup>University of Pennsylvania </br>
-<sup>3</sup>Google Research, Brain Team </br> 
-<sup>4</sup>University of Toronto </br> 
+<img src="https://russellmendonca.github.io/data/lexa-method.gif" width="600">
 
-<a href="https://orybkin.github.io/lexa/">
-<p align="center">
-<img src="https://orybkin.github.io/lexa/resources/frontier.gif" width="800">
-</p>
-</img></a>
 
-The implementation of the LEXA agent is coming soon!
+[website]: https://lexa-agent.github.io/
+
+
+
+## Setup
+
+Create the conda environment by running : 
+
+```
+conda env create -f environment.yml
+```
+
+Clone the [lexa-benchmark][lexa-bench-repo] repo, and modify the python path   
+`export PYTHONPATH=<path to lexa-training>/lexa:<path to lexa-benchmark>`  
+
+Export the following variables for rendering  
+`export MUJOCO_RENDERER=egl; export MUJOCO_GL=egl`
+
+[lexa-bench-repo]: https://github.com/lexa-agent/lexa-benchmark
+
+## Training
+
+First source the environment : `source activate lexa`
+
+For training, run : 
+
+```
+export CUDA_VISIBLE_DEVICES=<gpu_id>  
+python train.py --configs defaults <method> --task <task> --logdir <log path>
+```
+where method can be `lexa_temporal`, `lexa_cosine`, `ddl`, `diayn` or `gcsl`   
+Supported tasks are `dmc_walker_walk`, `dmc_quadruped_run`, `robobin`, `kitchen`, `joint`
+
+To view the graphs and gifs during training, run `tensorboard --logdir <log path>`
+

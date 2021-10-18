@@ -1,0 +1,15 @@
+# Multiworld requires this version
+gym<=0.15.4
+git+https://github.com/orybkin/mujoco-py.git
+tensorflow==2.4.0
+tensorflow_probability==0.12.1
+pandas
+matplotlib
+ruamel.yaml
+numpy
+dm_control
+numba
+pyquaternion
+numpy-quaternion=2020.11.2.17.0.49
+click
+termcolor
