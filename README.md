@@ -27,6 +27,8 @@ Clone the [lexa-benchmark](https://github.com/orybkin/lexa-benchmark) repo, and 
 Export the following variables for rendering  
 `export MUJOCO_RENDERER=egl; export MUJOCO_GL=egl`
 
+**WARNING!** Make sure to use the right python and mujoco version. The robobin environment code is known to break with other versions. Other environments might or might not work.
+
 ## Training
 
 First source the environment : `source activate lexa`
