@@ -150,7 +150,7 @@ defaults:
   ##dynamical_distance params
   dd_inp : 'embed'
   dd_num_positives : 256
-  dd_neg_sampling_factor : 0
+  dd_neg_sampling_factor : 0.1
   dd_norm_inp : False
   dd_norm_reg_label : True
   dd_train_imag : True
