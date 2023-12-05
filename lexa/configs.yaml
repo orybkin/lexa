@@ -39,7 +39,7 @@ defaults:
   dyn_mean_act: 'none'
   dyn_std_act: 'sigmoid2'
   dyn_min_std: 0.1
-  grad_heads: ['image', 'reward']
+  grad_heads: ['image']
   units: 400
   reward_layers: 2
   discount_layers: 3
