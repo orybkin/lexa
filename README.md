@@ -37,10 +37,11 @@ For training, run :
 
 ```
 export CUDA_VISIBLE_DEVICES=<gpu_id>  
-python train.py --configs defaults <method> --task <task> --logdir <log path>
+python train.py --configs defaults <method> --task <task> --logdir <log path> --time_limit <time limit>
 ```
+
 where method can be `lexa_temporal`, `lexa_cosine`, `ddl`, `diayn` or `gcsl`   
-Supported tasks are `dmc_walker_walk`, `dmc_quadruped_run`, `robobin`, `kitchen`, `joint`
+Supported tasks are `dmc_walker_walk`, `dmc_quadruped_run`, `robobin`, `kitchen`, `joint`. The time limit should be 1000 for DMC and default otherwise.
 
 To view the graphs and gifs during training, run `tensorboard --logdir <log path>`
 
