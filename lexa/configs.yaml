@@ -19,7 +19,7 @@ defaults:
   size: [64, 64]
   envs: 1
   action_repeat: 2
-  time_limit: 150
+  time_limit: 1000
   prefill: 2500
   eval_noise: 0.0
   clip_rewards: 'identity'
